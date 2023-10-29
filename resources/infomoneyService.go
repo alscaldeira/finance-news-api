@@ -11,6 +11,7 @@ import (
 )
 
 func Search(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Resgatando notícias em https://www.infomoney.com.br")
 	c := colly.NewCollector()
 
 	var todaysNews []model.News
