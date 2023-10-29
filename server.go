@@ -13,7 +13,7 @@ import (
 func InitializeServer() {
 	fmt.Println("Iniciando servidor.")
 	router := generateRoutes()
-	log.Fatal(http.ListenAndServe(":80", router))
+	log.Fatal(http.ListenAndServe(":8000", router))
 }
 
 func generateRoutes() *mux.Router {
