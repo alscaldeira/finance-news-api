@@ -13,6 +13,7 @@ import (
 func InitializeServer() {
 	fmt.Println("Iniciando servidor.")
 	router := generateRoutes()
+	fmt.Println("Rotas geradas")
 	log.Fatal(http.ListenAndServe(":8000", router))
 }
 
